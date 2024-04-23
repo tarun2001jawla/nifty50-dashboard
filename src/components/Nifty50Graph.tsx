@@ -21,7 +21,7 @@ const Nifty50Graph: React.FC<Props> = ({ data }) => {
       Low: parseFloat(entry.Low.replace(/,/g, '')),
       Close: parseFloat(entry.Close.replace(/,/g, '')),
     }));
-// Define options for the chart
+
 const options = {
   plugins: {
     title: {

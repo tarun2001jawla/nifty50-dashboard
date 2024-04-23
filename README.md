@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# Nifty50 Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Nifty50 Dashboard repository! This dashboard provides insights and visualizations for Nifty50 stock market data, including stock prices and company details.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Nifty50 Stocks Table**: View a table of Nifty50 stocks, including last traded price (LTP), change percentage, weightage, PE ratio, 52-week high, and 52-week low.
+- **Nifty50 Price History Graph**: Visualize the price history of Nifty50 stocks over the last 1 year with interactive line charts.
+## Getting Started
 
-## Expanding the ESLint configuration
+1. Clone the repository to your local machine:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```
+git clone https://github.com/<your-username>/nifty50-dashboard.git
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install the required dependencies:
+
+```
+
+npm install
+
+```
+
+3. Start the development server:
+
+```
+
+npm start
+
+```
+
+4. Open the dashboard in your browser at http://localhost:3000/
+
+## Contributing
+
+If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Nifty50](https://www.nifty.com) for providing the data and visualizations.
+- [React](https://reactjs.org/) for the front-end framework.
+
+- [Chart.js](https://www.chartjs.org/) for the interactive line chart.
+- [React-chartjs-2](https://github.com/reactchartjs/react-chartjs-2) for the React wrapper for Chart.js.
+
+- [React-bootstrap](https://react-bootstrap.github.io/) for the UI components.
+- [React-router-dom](https://reactrouter.com/) for routing.
+
+- [React-scripts](https://github.com/facebook/create-react-app) for the development environment.
+- [Axios](https://github.com/axios/axios) for making HTTP requests.
+
