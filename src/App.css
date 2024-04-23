@@ -1,0 +1,75 @@
+
+
+/* Heading styles */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333; /* Dark gray color */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  /* Container styles */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .chart-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Chart title styles */
+  .chart-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Chart canvas styles */
+  .canvas-container {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+  }
+
+  /* Table cell styles */
+  td {
+    padding: 10px;
+    border: solid 1px rgb(208, 0, 0);
+    background: #f2f2f2; 
+  }
+  
+  /* Hover effect for table cells */
+  td:hover {
+    background: #e0e0e0; 
+  }
+
+  th {
+    padding: 15px;
+    border: solid 1px gray;
+    background: #f2f2f2;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
