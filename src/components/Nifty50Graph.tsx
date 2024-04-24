@@ -12,9 +12,9 @@ interface Props {
 }
 
 const Nifty50Graph: React.FC<Props> = ({ data }) => {
-    // Process the data
+    
     const processedData = data
-    .filter(entry => entry.Date !== '') // Filter out entries with an empty string for Date
+    .filter(entry => entry.Date !== '') 
     .map((entry: { Date: any; Open: string; High: string; Low: string; Close: string; }) => ({
       Date: entry.Date,
       Open: parseFloat(entry.Open.replace(/,/g, '')),
@@ -29,7 +29,7 @@ const options = {
       display: false,
     },
     legend: {
-      position: 'bottom',
+      position: "bottom",
     },
   },
   scales: {
