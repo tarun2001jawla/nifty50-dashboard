@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Nifty50 Dashboard
 
 Welcome to the Nifty50 Dashboard repository! This dashboard provides insights and visualizations for Nifty50 stock market data, including stock prices and company details.
@@ -57,3 +58,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [React-scripts](https://github.com/facebook/create-react-app) for the development environment.
 - [Axios](https://github.com/axios/axios) for making HTTP requests.
 
+=======
+# nifty50-dashboard
+>>>>>>> a3dfac4632efc8bbaa540c2239f3dafbdaec02c1

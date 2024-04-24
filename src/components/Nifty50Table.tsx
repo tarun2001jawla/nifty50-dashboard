@@ -51,7 +51,7 @@ const StocksTable: React.FC<Props> = ({ data }) => {
       <thead>
         {headerGroups.map((headerGroup) => (
           <tr {...headerGroup.getHeaderGroupProps()}>
-            {headerGroup.headers.map((column) => ( // Corrected here: iterating over headerGroup.headers
+            {headerGroup.headers.map((column) => ( 
               <th {...column.getHeaderProps()}>{column.render('Header')}</th>
             ))}
           </tr>
@@ -59,7 +59,7 @@ const StocksTable: React.FC<Props> = ({ data }) => {
       </thead>
       <tbody {...getTableBodyProps()}>
         {rows.map((row) => {
-          prepareRow(row); // Moved this line outside of the map function
+          prepareRow(row); 
           return (
             <tr {...row.getRowProps()}>
               {row.cells.map((cell) => (
