@@ -3,6 +3,8 @@ import Papa from 'papaparse';
 import './App.css';
 import Nifty50Graph from './components/Nifty50Graph';
 import StocksTable from './components/Nifty50Table';
+import LiveChart from './components/APIChart';
+
 interface StockData {
   "All Companies ▲": string;
   "LTP": number;
@@ -34,14 +36,14 @@ function App() {
         const stocksDataResponse = await fetch('/Nifty 50 Stocks List  - Sheet1.csv');
         const stocksDataText = await stocksDataResponse.text();
         const stocksData = Papa.parse(stocksDataText, { header: true }).data;
-        console.log(stocksData);
+        // console.log(stocksData);
         setNifty50StocksData(stocksData as StockData[]);
 
 
         const pricesDataResponse = await fetch('/Download Data - INDEX_IN_NATIONAL STOCK EXCHANGE OF INDIA_NIFTY50 (1).csv');
         const pricesDataText = await pricesDataResponse.text();
         const pricesData = Papa.parse(pricesDataText, { header: true }).data;
-        console.log(pricesData)
+        // console.log(pricesData)
         setNifty50PriceHistory(pricesData as PriceData[]);
       } catch (error) {
         console.error('Error fetching or parsing data:', error);
@@ -61,7 +63,13 @@ function App() {
     <div className='chart-container'>
       <h2>Nifty 50 Prices in Last 1 Year</h2>
       <Nifty50Graph data={nifty50PriceHistory} />
+    
+    
     </div>
+    <div className='live-chart'>
+      <h2>Live Chart Using API</h2>
+      <LiveChart symbol= {'AMZN'} />
+      </div>
   </div>
   );
 }
