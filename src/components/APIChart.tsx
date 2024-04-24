@@ -66,7 +66,7 @@ const LiveChart: React.FC<LiveChartProps> = ({ symbol }) => {
       type: "candlestick",
     },
     title: {
-      text: `CandleStick Chart:${symbol}`,
+      text: `Showing Chart For:${symbol}`,
       align: "left",
       style: {
         fontSize: "20px", 

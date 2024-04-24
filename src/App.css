@@ -1,79 +1,103 @@
-
-
-/* Heading styles */
 h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333; 
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
-  }
-  
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333; /* Dark gray color */
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-  }
-  
-  /* Container styles */
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
-  .chart-container {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Chart title styles */
-  .chart-title {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #333;
-    text-align: center;
-  }
-  
-  /* Chart canvas styles */
-  .canvas-container {
-    position: relative;
-    width: 100%;
-    height: 400px; 
-  }
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  /* Table cell styles */
-  td {
-    padding: 10px;
-    border: solid 1px rgb(208, 0, 0);
-    background: #f2f2f2; 
-  }
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.chart-container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.canvas-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+td {
+  padding: 10px;
+  border: solid 1px rgb(208, 0, 0);
+  background: #f2f2f2;
+}
+
+td:hover {
+  background: #e0e0e0;
+}
+
+th {
+  padding: 15px;
+  border: solid 1px gray;
+  background: #f2f2f2;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
   
-  /* Hover effect for table cells */
-  td:hover {
-    background: #e0e0e0; 
-  }
+}
 
-  th {
-    padding: 15px;
-    border: solid 1px gray;
-    background: #f2f2f2;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-  }
 
-  .live-chart {
-    background-color: lightcyan;
-  }
+
+.search-btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: rebeccapurple;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.live-chart {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
