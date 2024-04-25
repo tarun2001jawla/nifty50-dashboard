@@ -6,7 +6,7 @@ interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const [symbol, setSymbol] = useState<string>("");
-
+   const [error,setError] = useState<boolean>();
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSymbol(event.target.value);
   }
@@ -15,6 +15,9 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     event.preventDefault();
     if (symbol.trim() !== "") {
       onSearch(symbol);
+      setError(false);
+    } else {
+      setError(true);
     }
   } 
 
@@ -27,6 +30,9 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
         onChange={handleChange}
       />
       <button className='search-btn' type="submit">Search</button>
+      {
+        error && <p className='error'>Please enter a valid symbol</p>
+      }
     </form>
   )
 }
