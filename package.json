@@ -19,7 +19,7 @@
     "dayjs": "^1.11.10",
     "dotenv": "^16.4.5",
     "finnhub": "^1.2.18",
-    "framer-motion": "^11.1.7",
+    "framer-motion": "^11.2.12",
     "install": "^0.13.0",
     "npm": "^10.5.2",
     "plotly.js": "^2.31.1",
